@@ -33,6 +33,7 @@ const Feed = () => {
 
       setPosts(data)
     }
+    fetchPosts()
   }, [])
 
   return (
@@ -47,8 +48,9 @@ const Feed = () => {
           className='search_input peer'
         />
       </form>
+
       <PromptCardList
-        data={[posts]}
+        data={posts}
         handleTagClick={() => {}}
       />
     </section>

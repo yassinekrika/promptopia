@@ -1,6 +1,6 @@
 "use client"
 
-import { userState } from 'react'
+import { useState } from 'react'
 import Image from 'next/image'
 import { useSession } from 'next-auth/react'
 import { usePathname, useRouter } from 'next/navigation'
@@ -17,6 +17,11 @@ const PromptCard = ({ post, handleTagClick, handleTagEdit, handleTagDelete}) => 
             height={40}
             className='rounded-full objet-contain'
           />
+
+          <div className="flex flex-col">
+            <h3>{post.creator.username}</h3>
+            <p>{post.creator.email}</p>
+          </div>
         </div>
       </div>
     </div>
