@@ -58,3 +58,10 @@ const Feed = () => {
 }
 
 export default Feed
+
+// implement Search
+// - search by prompt
+// - search by tag
+// - search by username
+// implement click on tag
+// implement view other profiles
